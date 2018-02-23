@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="2" >
+
+
+
+        <ImageView
+            android:id="@+id/imageViewCreature"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="start"/>
+
+        <LinearLayout
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/textViewNomCreature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Nom de la creature:" />
+
+                <TextView
+                    android:id="@+id/textViewNbVies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:text="Nb de vies:" />
+
+                <TextView
+                    android:id="@+id/textViewAttaque"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+
+                    android:text="Attaque:" />
+
+                <TextView
+                    android:id="@+id/textViewDefense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+
+                    android:text="Défense:" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/textViewGetNomC"
+                    android:layout_width="166dp"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:id="@+id/textViewGetNbviesC"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:id="@+id/textViewGetAttaque"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+
+                <TextView
+                    android:id="@+id/textViewGetDefense"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+</LinearLayout>

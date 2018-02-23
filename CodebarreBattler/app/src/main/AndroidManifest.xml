@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.mbds.codebarrebattler">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CreatureDetailActivity"
+            android:parentActivityName=".ListCreaturesActivity" />
+        <activity
+            android:name=".ListCreaturesActivity"
+            android:label="Liste des créatures"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListEquipmentsPerCreatureActivity"
+            android:label="@string/title_activity_list_equipments_per_creature"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ConfigurationJeuLocalActivity" />
+        <activity
+            android:name=".ConfigurationJeuReseauActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PlayLocal"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".EquipmentDetailActivity"></activity>
+    </application>
+
+</manifest>

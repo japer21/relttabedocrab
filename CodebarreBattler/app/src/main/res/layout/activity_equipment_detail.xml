@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fr.mbds.codebarrebattler.EquipmentDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgEquipment"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:padding="@dimen/spacing_layout_vertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="263dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="141dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/nomEquipDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/spacing_layout"
+                    android:text="Nom:" />
+
+                <TextView
+                    android:id="@+id/contribuEquipDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/spacing_layout"
+                    android:text="Contribution:" />
+
+                <TextView
+                    android:id="@+id/belongsToDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/spacing_layout"
+                    android:text="Belongs to:" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="243dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/setNomEquip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/spacing_layout" />
+
+                <TextView
+                    android:id="@+id/setContrib"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/spacing_layout" />
+
+                <TextView
+                    android:id="@+id/setBelongs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/spacing_layout" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/supprimerEquip"
+            android:layout_width="115dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Supprimer" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
