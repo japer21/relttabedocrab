@@ -3,6 +3,8 @@ package fr.mbds.codebarrebattler;
 import android.content.Context;
 import android.content.Intent;
 import android.database.SQLException;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -39,6 +41,7 @@ public class ListCreaturesActivity extends AppCompatActivity {
     IntentIntegrator zxing_scan = new IntentIntegrator(this);
     ListAdapter adapter = null;
     ListView listCreatures;
+    List<String>images=Arrays.asList("photo1.png","photo2.png","photo3.png");
     TextView count;
     private List<String> titles = Arrays.asList("Miamol","Kutus","Liany","Jukevan","Motus","Neatle","Kungvu","Propzee","Quotopi","Linkec");
     private Random randomGenerator;
@@ -83,6 +86,8 @@ public class ListCreaturesActivity extends AppCompatActivity {
         randomGenerator = new Random();
         int index = randomGenerator.nextInt(titles.size());
         String creaTitle = titles.get(index);
+        int photoIndex = randomGenerator.nextInt(images.size());
+        String photoChoisie = "R.mimap."+images.get(photoIndex);
 
         if(result != null) {
             if(result.getContents() == null) {

@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="fr.mbds.codebarrebattler">
 
+    <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -39,7 +40,8 @@
         <activity
             android:name=".PlayLocal"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".EquipmentDetailActivity"></activity>
+        <activity android:name=".EquipmentDetailActivity" />
+        <activity android:name=".PlayNetwork"></activity>
     </application>
 
 </manifest>
