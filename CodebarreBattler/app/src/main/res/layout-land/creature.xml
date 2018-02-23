@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewCreature"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewNomCreature"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/imageViewCreature"
+        android:layout_centerHorizontal="true"
+        android:text="Nom de la creature:"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textViewNbVies"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/textViewNomCreature"
+        android:layout_alignStart="@+id/textViewNomCreature"
+        android:layout_below="@+id/textViewNomCreature"
+        android:text="Nb de vies:"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textViewAttaque"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/textViewNbVies"
+        android:layout_alignStart="@+id/textViewNbVies"
+        android:layout_below="@+id/textViewNbVies"
+        android:text="Attaque:"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textViewDefense"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/textViewAttaque"
+        android:layout_alignStart="@+id/textViewAttaque"
+        android:layout_below="@+id/textViewAttaque"
+        android:text="Défense:"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textViewGetNomC"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/textViewNomCreature"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/textViewNomCreature"
+         />
+
+    <TextView
+        android:id="@+id/textViewGetNbviesC"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/textViewGetNomC"
+        android:layout_below="@+id/textViewGetNomC"
+ />
+
+    <TextView
+        android:id="@+id/textViewGetAttaque"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/textViewGetNbviesC"
+        android:layout_below="@+id/textViewGetNbviesC" />
+
+    <TextView
+        android:id="@+id/textViewGetDefense"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/textViewGetAttaque"
+        android:layout_below="@+id/textViewGetAttaque" />
+
+</RelativeLayout>

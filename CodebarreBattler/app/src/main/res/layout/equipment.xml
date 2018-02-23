@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewEquip"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textViewNomEquip"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/imageViewEquip"
+        android:layout_centerHorizontal="true"
+        android:text="@+string/Nom de l'equip:"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textViewContribution"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/textViewNomEquip"
+        android:layout_alignStart="@+id/textViewNomEquip"
+        android:layout_below="@+id/textViewNomEquip"
+        android:text="@+string/Contribution:"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textViewBelongsTo"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignEnd="@+id/textViewContribution"
+        android:layout_alignStart="@+id/textViewContribution"
+        android:layout_below="@+id/textViewContribution"
+        android:text="Belongs to:"
+        android:textAlignment="textEnd" />
+
+
+
+    <TextView
+        android:id="@+id/textViewGetNomE"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignTop="@+id/textViewNomEquip"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/textViewNomEquip"
+        />
+
+    <TextView
+        android:id="@+id/textViewGetContribE"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/textViewGetNomE"
+        android:layout_below="@+id/textViewGetNomE"
+        />
+
+    <TextView
+        android:id="@+id/textViewGetBelongsTo"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/textViewGetContribE"
+        android:layout_below="@+id/textViewGetContribE" />
+
+
+
+
+</RelativeLayout>
