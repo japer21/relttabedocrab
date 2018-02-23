@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">CodebarreBattler</string>
-    <string name="title_activity_list_creatures">ListCreaturesActivity</string>
-    <string name="supprimer">Supprimer</string>
-    <string name="title_activity_list_equipments_per_creature">ListEquipmentsPerCreatureActivity
-    </string>
-</resources>
